@@ -2,16 +2,16 @@ class Eyeq < Formula
   desc "Multi-video subjective quality comparison tool"
   homepage "https://github.com/elxy/eyeq"
   license "LGPL-2.1-or-later"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     url "https://github.com/elxy/eyeq/releases/download/v#{version}/eyeq-v#{version}-macos-arm64.tar.gz"
-    sha256 "e552065e3a714c2e91431476fa345da401f7a8413b5d859d473c188067cb3684"
+    sha256 "8d6b36b9943dfe9dda3af23de2ae76dede095a481e79218c65f6b1c81b3262fc"
   end
 
   on_linux do
     url "https://github.com/elxy/eyeq/releases/download/v#{version}/eyeq-v#{version}-linux-x86_64.tar.gz"
-    sha256 "ef827d419ca2aeb068b52b31e19ea03989c385d7f8c36cac57ff8436fd4b54f8"
+    sha256 "96274ede4f9d3304624f460ffc90a6558aaf8414576d5db6141e71985fff1700"
   end
 
   depends_on "ffmpeg"
