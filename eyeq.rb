@@ -6,12 +6,12 @@ class Eyeq < Formula
 
   on_macos do
     url "https://github.com/elxy/eyeq/releases/download/v#{version}/eyeq-v#{version}-macos-arm64.tar.gz"
-    sha256 "8d6b36b9943dfe9dda3af23de2ae76dede095a481e79218c65f6b1c81b3262fc"
+    sha256 "7aa7226e7d5846b9519d57aca6812bf2529b220a6866c12526ecadcdae756c9d"
   end
 
   on_linux do
     url "https://github.com/elxy/eyeq/releases/download/v#{version}/eyeq-v#{version}-linux-x86_64.tar.gz"
-    sha256 "96274ede4f9d3304624f460ffc90a6558aaf8414576d5db6141e71985fff1700"
+    sha256 "6c5bfea27d82fbae9c442b448d348b594f8ed20d17f549fe304adc10afca6359"
   end
 
   depends_on "ffmpeg"
