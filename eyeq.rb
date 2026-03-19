@@ -46,6 +46,9 @@ class Eyeq < Formula
           opoo "Cannot find Homebrew library for #{lib_name}"
         end
       end
+
+      # install_name_tool 修改库路径后原有签名失效，需要 ad-hoc 重签名
+      system "codesign", "--force", "--sign", "-", "#{bin}/eyeq"
     else
       system "patchelf", "--set-rpath", "#{HOMEBREW_PREFIX}/lib", "#{bin}/eyeq"
     end
